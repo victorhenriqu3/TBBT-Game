@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Lizard Spock</title>
+  </head>
+  <body>
+    <div id="Principal">
+      <h1 id="Title">Pedra, Papel, Tesoura,<br> Largato e Spock</h1>
+      <div id="Score">
+        <div id="Player">
+          <h2 id="Name-player">Jogador</h2>
+          <span id="Points-player">0</span>
+          <ul id="choice-player">
+            <li><a id="choice-player-1" onclick="play(1)"><img src="img/Rock.png"></a></li>
+            <li><a id="choice-player-2" onclick="play(2)"><img src="img/Paper.png"></a></li>
+            <li><a id="choice-player-3" onclick="play(3)"><img src="img/Scissors.png"></a></li>
+            <li><a id="choice-player-4" onclick="play(4)"><img src="img/Lizard.png"></a></li>
+            <li><a id="choice-player-5" onclick="play(5)"><img src="img/Spock.png"></a></li>
+          </ul>
+        </div>
+
+        <div id="Versus">VS</div>
+
+        <div id="Computer">
+          <h2 id="Name-computer">Computador</h2>
+          <span id="Points-computer">0</span>
+          <ul id="choice-computer">
+            <li><a id="choice-computer-1"><img src="img/Rock.png"></a></li>
+            <li><a id="choice-computer-2"><img src="img/Paper.png"></a></li>
+            <li><a id="choice-computer-3"><img src="img/Scissors.png"></a></li>
+            <li><a id="choice-computer-4"><img src="img/Lizard.png"></a></li>
+            <li><a id="choice-computer-5"><img src="img/Spock.png"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="Messages">Pode começar . . .</div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
