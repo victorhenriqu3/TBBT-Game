@@ -1,44 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors Lizard Spock</title>
-  </head>
-  <body>
-    <div id="Principal">
-      <h1 id="Title">Pedra, Papel, Tesoura,<br> Largato e Spock</h1>
-      <div id="Score">
-        <div id="Player">
-          <h2 id="Name-player">Jogador</h2>
-          <span id="Points-player">0</span>
-          <ul id="choice-player">
-            <li><a id="choice-player-1" onclick="play(1)"><img src="img/Rock.png"></a></li>
-            <li><a id="choice-player-2" onclick="play(2)"><img src="img/Paper.png"></a></li>
-            <li><a id="choice-player-3" onclick="play(3)"><img src="img/Scissors.png"></a></li>
-            <li><a id="choice-player-4" onclick="play(4)"><img src="img/Lizard.png"></a></li>
-            <li><a id="choice-player-5" onclick="play(5)"><img src="img/Spock.png"></a></li>
-          </ul>
-        </div>
+<html lang="en">
 
-        <div id="Versus">VS</div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href=/public/favicon-16x16.png">
+  <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon" />
+  <link rel="manifest" href="/public/site.webmanifest">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors Lizard Spock</title>
+</head>
 
-        <div id="Computer">
-          <h2 id="Name-computer">Computador</h2>
-          <span id="Points-computer">0</span>
-          <ul id="choice-computer">
-            <li><a id="choice-computer-1"><img src="img/Rock.png"></a></li>
-            <li><a id="choice-computer-2"><img src="img/Paper.png"></a></li>
-            <li><a id="choice-computer-3"><img src="img/Scissors.png"></a></li>
-            <li><a id="choice-computer-4"><img src="img/Lizard.png"></a></li>
-            <li><a id="choice-computer-5"><img src="img/Spock.png"></a></li>
-          </ul>
-        </div>
+<body>
+
+  <!-- Game structure -->
+  <id id="Principal">
+    <h1 id="Title">
+      Rock🗿, Paper📃, Scissors✂️,<br />
+      Lizard🦎 and Spock🖖.
+    </h1>
+    <div id="Score">
+      <div id="Player">
+        <h2 id="Name-player">Jogador</h2>
+        <span id="Points-player">0</span>
+        <ul id="choice-player">
+          <li>
+            <a id="choice-player-1" onclick="play(1)"><img src="img/Rock.png" /></a>
+          </li>
+          <li>
+            <a id="choice-player-2" onclick="play(2)"><img src="img/Paper.png" /></a>
+          </li>
+          <li>
+            <a id="choice-player-3" onclick="play(3)"><img src="img/Scissors.png" /></a>
+          </li>
+          <li>
+            <a id="choice-player-4" onclick="play(4)"><img src="img/Lizard.png" /></a>
+          </li>
+          <li>
+            <a id="choice-player-5" onclick="play(5)"><img src="img/Spock.png" /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="Versus">VS</div>
+
+      <div id="Computer">
+        <h2 id="Name-computer">Computador</h2>
+        <span id="Points-computer">0</span>
+        <ul id="choice-computer">
+          <li>
+            <a id="choice-computer-1"><img src="img/Rock.png" /></a>
+          </li>
+          <li>
+            <a id="choice-computer-2"><img src="img/Paper.png" /></a>
+          </li>
+          <li>
+            <a id="choice-computer-3"><img src="img/Scissors.png" /></a>
+          </li>
+          <li>
+            <a id="choice-computer-4"><img src="img/Lizard.png" /></a>
+          </li>
+          <li>
+            <a id="choice-computer-5"><img src="img/Spock.png" /></a>
+          </li>
+        </ul>
       </div>
       <div id="Messages">Pode começar . . .</div>
+
+      <!-- Winner animation -->
+
+      <div class="modal-container">
+        <div class="popup center">
+          <div class="icon">
+            <h1 id="status"></h1>
+          </div>
+          <div class="title" id="title"></div>
+          <div class="description" id="description"></div>
+
+          <div class="dismiss-btn">
+            <button id="dismiss-popup-btn">Voltar</button>
+          </div>
+        </div>
+      </div>
     </div>
-  </body>
-  <script src="script.js"></script>
+
+    <div id="rules">
+      <h1>Como Jogar:</h1>
+      <ul>
+        <li>Papel cobre pedra</li>
+        <li>Pedra esmaga lagarto</li>
+        <li>Lagarto envenena Spock</li>
+        <li>Spock esmaga (ou derrete) tesoura</li>
+        <li>Tesoura decapita lagarto</li>
+        <li>Lagarto come papel</li>
+        <li>Spock vaporiza pedra</li>
+        <li>Papel refuta Spock</li>
+        <li>Tesoura corta papel</li>
+        <li>Pedra quebra tesoura</li>
+      </ul>
+    </div>
+</body>
+<script src="script.js"></script>
+
 </html>
