@@ -1,6 +1,8 @@
 var playerChoice = 0;
 var computerChoice = 0;
 var Winner = -1;
+var scorePlayer = 0;
+var scoreComputer = 0;
 
 function play(choice) {
   playerChoice = choice;
@@ -68,12 +70,92 @@ function play(choice) {
     .classList.add("selected");
 
   if (Winner == 0) {
-    document.getElementById("Messages").innerHTML = "EMPATOU";
+    document.getElementById("Messages").innerHTML = "EMPATOU !!!";
   } else if (Winner == 1) {
-    document.getElementById("Messages").innerHTML = "JOGADOR GANHOU";
+    document.getElementById("Messages").innerHTML = "JOGADOR GANHOU !!!";
+    scorePlayer++;
   } else if (Winner == 2) {
-    document.getElementById("Messages").innerHTML = "COMPUTADOR GANHOU";
+    document.getElementById("Messages").innerHTML = "COMPUTADOR GANHOU !!!";
+    scoreComputer++;
   }
+  document.getElementById("Points-player").innerHTML = `${scorePlayer}`;
+  document.getElementById("Points-computer").innerHTML = `${scoreComputer}`;
+
+  if (scorePlayer >= 5) {
+    playerWinner();
+  } else if (scoreComputer >= 5) {
+    computerWinner();
+  }
+}
+
+function playerWinner() {
+  document.getElementById("Messages").innerHTML = "Pode começar . . .";
+  document.getElementById("status").innerHTML = "✔️";
+  document.getElementById("title").innerHTML = "Sucesso";
+  document.getElementById(
+    "description"
+  ).innerHTML = `Você ganhou com uma pontuação de ${scorePlayer} contra ${scoreComputer} da Máquina.`;
+
+  for (var index = 1; index < 6; index++) {
+    document
+      .getElementById(`choice-player-${index}`)
+      .classList.remove("selected");
+    document
+      .getElementById(`choice-computer-${index}`)
+      .classList.remove("selected");
+  }
+
+  document.getElementsByClassName("popup")[0].classList.add("active");
+  document.getElementsByClassName("modal-container")[0].classList.add("active");
+  document
+    .getElementById("dismiss-popup-btn")
+    .addEventListener("click", function () {
+      document.getElementsByClassName("popup")[0].classList.remove("active");
+      document
+        .getElementsByClassName("modal-container")[0]
+        .classList.remove("active");
+    });
+
+  scoreComputer = 0;
+  scorePlayer = 0;
+  document.getElementById("Points-player").innerHTML = `${scorePlayer}`;
+  document.getElementById("Points-computer").innerHTML = `${scoreComputer}`;
+  document.getElementById("Messages").innerHTML = "Pode começar . . .";
+}
+
+function computerWinner() {
+  document.getElementById("Messages").innerHTML = "Pode começar . . .";
+  document.getElementById("status").innerHTML = "❌";
+  document.getElementById("title").innerHTML = "Falhou";
+  document.getElementById(
+    "description"
+  ).innerHTML = `Você perdeu com uma pontuação de ${scorePlayer} contra ${scoreComputer} da Máquina.`;
+
+  for (var index = 1; index < 6; index++) {
+    document
+      .getElementById(`choice-player-${index}`)
+      .classList.remove("selected");
+    document
+      .getElementById(`choice-computer-${index}`)
+      .classList.remove("selected");
+  }
+
+  document.getElementsByClassName("popup")[0].classList.add("active");
+  document.getElementsByClassName("modal-container")[0].classList.add("active");
+  document
+    .getElementById("dismiss-popup-btn")
+    .addEventListener("click", function () {
+      document.getElementsByClassName("popup")[0].classList.remove("active");
+      document
+        .getElementsByClassName("modal-container")[0]
+        .classList.remove("active");
+    });
+
+  scoreComputer = 0;
+  scorePlayer = 0;
+  document.getElementById("Points-player").innerHTML = `${scorePlayer}`;
+  document.getElementById("Points-computer").innerHTML = `${scoreComputer}`;
+  document.getElementById("Messages").innerHTML = "Pode começar . . .";
 }
 
 /*
