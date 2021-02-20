@@ -90,11 +90,6 @@ function play(choice) {
 
 function playerWinner() {
   document.getElementById("Messages").innerHTML = "Pode começar . . .";
-  document.getElementById("status").innerHTML = "✔️";
-  document.getElementById("title").innerHTML = "Sucesso";
-  document.getElementById(
-    "description"
-  ).innerHTML = `Você ganhou com uma pontuação de ${scorePlayer} contra ${scoreComputer} da Máquina.`;
 
   for (var index = 1; index < 6; index++) {
     document
@@ -105,16 +100,11 @@ function playerWinner() {
       .classList.remove("selected");
   }
 
-  document.getElementsByClassName("popup")[0].classList.add("active");
-  document.getElementsByClassName("modal-container")[0].classList.add("active");
-  document
-    .getElementById("dismiss-popup-btn")
-    .addEventListener("click", function () {
-      document.getElementsByClassName("popup")[0].classList.remove("active");
-      document
-        .getElementsByClassName("modal-container")[0]
-        .classList.remove("active");
-    });
+  Swal.fire(
+    'Sucesso!',
+    `Você ganhou com uma pontuação de ${scorePlayer} contra ${scoreComputer} da Máquina.`,
+    'success'
+  );
 
   scoreComputer = 0;
   scorePlayer = 0;
@@ -125,11 +115,6 @@ function playerWinner() {
 
 function computerWinner() {
   document.getElementById("Messages").innerHTML = "Pode começar . . .";
-  document.getElementById("status").innerHTML = "❌";
-  document.getElementById("title").innerHTML = "Falhou";
-  document.getElementById(
-    "description"
-  ).innerHTML = `Você perdeu com uma pontuação de ${scorePlayer} contra ${scoreComputer} da Máquina.`;
 
   for (var index = 1; index < 6; index++) {
     document
@@ -140,16 +125,11 @@ function computerWinner() {
       .classList.remove("selected");
   }
 
-  document.getElementsByClassName("popup")[0].classList.add("active");
-  document.getElementsByClassName("modal-container")[0].classList.add("active");
-  document
-    .getElementById("dismiss-popup-btn")
-    .addEventListener("click", function () {
-      document.getElementsByClassName("popup")[0].classList.remove("active");
-      document
-        .getElementsByClassName("modal-container")[0]
-        .classList.remove("active");
-    });
+  Swal.fire(
+    'Falhou!',
+    `Você perdeu com uma pontuação de ${scorePlayer} contra ${scoreComputer} da Máquina.`,
+    'error'
+  )
 
   scoreComputer = 0;
   scorePlayer = 0;

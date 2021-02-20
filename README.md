@@ -1,18 +1,18 @@
 
 # Rock🗿 Paper📃 Scissors✂️ Lizard🦎 Spock🖖
 
-<center>
+<p align="center">
 <img src="https://2.bp.blogspot.com/-Lf3i84CQGCM/Wef5gjBnmXI/AAAAAAAAbFA/5yKA1I1j-S4O-lk-UFDtvPhtfdVY-mp4gCLcBGAs/s400/unnamed%2B%25281%2529.gif">
-</center>
+</p>
 <br>
-<center>
+<p align="center">
 <img src="https://img.shields.io/badge/HTML-5-orange">
 <img src="https://img.shields.io/badge/CSS-3-blue">
 <img src="https://img.shields.io/badge/JavaScript-Vanilla-yellow">
-</center>
+</p>
 
-Tabela de conteúdos
-=================
+<p align="center">Tabela de conteúdos</p>
+
 <p align="center">
    <a href="#Sobre">📄 Sobre</a> •
    <a href="#Demosntração"> 💻 Demonstração</a> •
@@ -22,8 +22,8 @@ Tabela de conteúdos
 
 ----
 ## Sobre:
-<br>
-<p>Pedra, papel, tesoura, lagarto, Spock é uma expansão do clássico pedra, papel e tesoura. Atua sob o mesmo princípio básico, mas inclui outras duas armas: o Lagarto 🦎 (a mão em forma de uma boca de fantoche) e Spock 🖖 (a mão imitando uma saudação dos vulcanos em Star Trek), o que reduz as chances de uma rodada terminar em um empate. Esse jogo foi inventado por Sam Kass e Karen Bryla e o nome original é “Rock Paper Scissors Lizard Spock“.</p>
+
+<p>Pedra, papel, tesoura, lagarto, Spock é uma expansão do clássico jogo "pedra, papel e tesoura", ou seja atua com o mesmo princípio básico, mas inclui outras duas armas: o Lagarto 🦎 (a mão em forma de uma boca de fantoche) e Spock 🖖 (a mão imitando uma saudação dos vulcanos em Star Trek), o que reduz as chances de ocorrer um empate. Esse jogo foi inventado por Sam Kass e Karen Bryla e o nome original é “Rock Paper Scissors Lizard Spock“.</p>
 <p>Feito com o intuito de aprimorar a lógica de programação com JavaScript, e o desenvolvimento de interfaces com HTML e CSS, e claro relembrar um dos jogos mais populares em The Big Bang Theory.</p>
 
 ---
@@ -31,17 +31,10 @@ Tabela de conteúdos
 
 ## Demonstração:
 
-<center>
-
-<img src="https://media.giphy.com/media/JE1Dip0D0qCxtq7VhT/giphy.gif" alt="Demonstração da aplicação" />
-
-</center>
-
-<center>
-
-##  [ 🔗 Acesse o Projeto ](https://victorhenriqu3.github.io/TBBT-Game/) 
-
-</center>
+<p align="center">
+<img src="https://media.giphy.com/media/0zEeSoCXYv8VKft8AA/giphy.gif" alt="Demonstração da aplicação" /><br>
+<a href="https://victorhenriqu3.github.io/TBBT-Game/" style="font-size: 21px">🔗 Acesse o Projeto </a>
+</p>
 <br>
 
 ## Como Jogar :
@@ -80,5 +73,5 @@ Feito com ❤️ por Victor Henrique.<br>
 👋🏽 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-Victor-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/victor-henrique-monteiro-lima/)](https://www.linkedin.com/in/victor-henrique-monteiro-lima/)
-[![Outlook Badge](https://img.shields.io/badge/-victorhenriqu3@outlook.com-0078D4?style=flat&logo=Outlook&logoColor=white)](mailto:victorhenriqu3@outlook.com)
+[![Outlook Badge](https://img.shields.io/badge/-Outlook-0078D4?style=flat-square&logo=Microsoft-Outlook&logoColor=white&link=mailto:victorhenriqu3@outlook.com)](mailto:victorhenriqu3@outlook.com)
 [![GitHub Badge](https://img.shields.io/static/v1?label=Github&message=victorhenriqu3&color=fff&style=square&logo=Github)](https://github.com/victorhenriqu3)
